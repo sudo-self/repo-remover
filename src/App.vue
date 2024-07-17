@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="app"
-    class="is-flex"
-  >
+  <div id="app" class="is-flex">
     <TheFeaturedCallout />
 
     <TheNavBar v-if="$route.name !== 'home'" />
@@ -17,6 +14,7 @@
 import TheFeaturedCallout from "@/components/TheFeaturedCallout.vue";
 import TheNavBar from "@/components/TheNavBar.vue";
 import TheFooter from "@/components/TheFooter.vue";
+
 export default {
   metaInfo: {
     title: "Repo Remover | Cleanup your GitHub repos with ease.",
@@ -27,24 +25,23 @@ export default {
       },
       {
         name: "description",
-        content:
-          "Repo Remover makes it easy to archive and delete multiple GitHub repos at the same time. Free to use, and 100% open source."
+        content: "Repo Remover makes it easy to archive and delete multiple GitHub repos at the same time. Free to use, and 100% open source."
       },
       {
-        poperty: "og:image",
+        property: "og:image",
         content: "https://reporemover.xyz/repo-remover-landing.png"
       },
       {
-        poperty: "og:url",
+        property: "og:url",
         content: "https://reporemover.xyz"
       },
       {
-        poperty: "og:site_name",
-        content: "Repo Remove"
+        property: "og:site_name",
+        content: "Repo Remover"
       },
       {
-        poperty: "og:type",
-        content: "Website"
+        property: "og:type",
+        content: "website"
       }
     ]
   },
@@ -67,3 +64,4 @@ html {
   flex-direction: column;
 }
 </style>
+
